@@ -1,0 +1,1 @@
+Personally commented pure HTML, CSS, Javascript simple japanese restaurant website.
