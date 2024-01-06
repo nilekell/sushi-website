@@ -141,6 +141,7 @@ a {
   }
 }
 
+/* dynamically changing about-us content based on screen width */
 @media screen and (max-width: 550px) {
   .about-us__image-sushi2 img,
   .about-us__image-sushi3 img {
@@ -165,7 +166,7 @@ a {
 /* END: about us media queries */
 
 
-/* START: header media querie */
+/* START: header media queries */
 @media screen and (max-width: 900px) {
   .header__nav {
     background: var(--primary-color);

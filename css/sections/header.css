@@ -17,6 +17,10 @@
     width: 100%;
   
     background-color: var(--primary-color);
+    /* z-index controls the stack order of an element;
+    a value of -1 places this element behind other elements
+    that have a value > -1 */
+    /* this element needs to have a 'position' value to have any effect */
     z-index: -1;
   }
   
@@ -33,6 +37,9 @@
 
   .header__menu, .header__menu-mobile {
     padding: 20px;
+    /* allows flex item to grow and shrink, but starts with a base size of 0.
+    1.236 is its flex grow factor, so this element takes up more space in a flex
+    container than elements with a lower flex grow factor */
     flex: 1.236;
     display: flex;
     align-items: center;
@@ -59,6 +66,9 @@
   }
   
   .header__menu-mobile {
+    /* hides an element completely, and the element will
+    take up no space in the layout. Often used to hide elements
+    that might be shown later (e.g. modals) using js */
     display: none;
     gap: 20px;
   

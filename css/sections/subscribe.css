@@ -10,6 +10,7 @@
     overflow: hidden;
 }
 
+/* targeting all h2 elements in subscription class */
 .subscription h2 {
     font-size: 88px;
     font-family: var(--playfair-display);
@@ -58,6 +59,7 @@
     outline: none;
 }
 
+/* styling placeholder text */
 .subscription__form input::placeholder {
     color: #fff;
     opacity: 0.5;

@@ -1,5 +1,8 @@
 .hero {
     display: flex;
+    /* dynamically calculating minimum height of element.
+    100vh is the viewport's height (visible part of webpage). So
+    this item will always take up the full view port minus 74 pixels */
     min-height: calc(100vh - 74px);
     overflow: hidden;
   }
@@ -21,6 +24,11 @@
   
   .hero-image__overlay {
     position: absolute;
+    /* inset specifies the placement of a positioned element.
+    settings inset as 0, effectively positions this element at the top-left
+    corner of its nearest positioned ancestor.
+    this property is often used to precisely position an element within 
+    its positioned parent/ancestor. */
     inset: 0;
     width: 100%;
   
@@ -30,6 +38,8 @@
   
   .hero-image h2 {
     position: absolute;
+    /* bottom margin - aligns the element at the bottom of its
+    nearest positioned ancestor */
     bottom: 0;
     padding: 20px;
   
@@ -97,6 +107,11 @@
   
   .hero-content__play-button {
     border: none;
+    /* removes the outline from an element, often used for
+     aesthetic reasons or to remove default browser styles.
+     outlines are often seen around focused elements like buttons
+      or input fields and are important for accessibility as they 
+      indicate focus. */
     outline: none;
     background: transparent;
   

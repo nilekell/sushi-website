@@ -1,17 +1,28 @@
 .about-us {
+    /* enables a flexible box layout
+     this provides an efficient way to align and distribute space among
+     in a container. All of its children become flex items, which by default
+     are layed out horizontally */
     display: flex;
     min-height: 720px;
     overflow: hidden;
 }
 
 .about-us__image {
+    /* quick way of setting - flex-grow: 1; flex-shrink: 1; flex-basis: 0;
+    This means flex items/children can grow & shrink if necessary
+    The item's size is also entirely determined by its contents */
     flex: 1;
     display: flex;
+    /* laying out flex items vertically */
     flex-direction: column;
+    /* centers items along the main axis (in this case the main axis is vertical) */
     justify-content: center;
 
     background: var(--color-white);
 
+    /* this means the element first takes up its normal amount of space, but
+    will affect the position of other elements */
     position: relative;
 }
 
@@ -21,8 +32,11 @@
     display: flex;
     align-items: center;
     background-position: center;
-
+    /* background image is not tiled, so only repeats once */
     background-repeat: no-repeat;
+    /* scales image to largest size so it can fit inside the element
+    while maintaining aspect ratio */
+    /* also prevents image-cropping */
     background-size: contain;
 }
 
@@ -62,16 +76,23 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 23px;
-    
+    /* changes cursor to a pointer (hand) */
     cursor: pointer;
 }
 
 .about-us__button img {
+    /* applied to img or video elements */
+    /* content is scaled to fit inside element but maintains its aspect ratio */
     object-fit: contain;
+    /* margin is the space outside an element's border */
+    /* element content does not expand onto the margin (e.g. background color
+    unlike padding */
     margin-left: 32px;
 }
 
 .about-us__content {
+    /* padding is the space between an element's border and its content */
+    /* padding increases size of element, margin does not */
     padding: 64px;
     flex: 1;
     display: flex;

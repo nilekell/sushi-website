@@ -3,10 +3,13 @@
     width: 100%;
     padding: 20px 40px;
     background: var(--color-white);
-
+    /* allows flex items to expand onto multiple lines, when there
+    is insufficient space to appear on a single line */
     flex-wrap: wrap;
+    /* sets spacing between flex items */
     gap: 20px;
-
+    /* if content exceeds the size of its container, it is hidden. 
+    can create a clipping effect */
     overflow: hidden;
 }
 
@@ -26,6 +29,8 @@
 }
 
 .footer ul {
+    /* removes default list items markers/bullet points
+    in ul or li elements */
     list-style: none;
 
     display: flex;
@@ -62,6 +67,7 @@
 
 /* styling for each social image */
 .footer__social li img {
+    /* 45% of parent container's width and height */
     width: 45%;
     height: 45%;
 
